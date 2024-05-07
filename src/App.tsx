@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetchStates();
+    selectedCountry?.id && fetchStates();
   }, [selectedCountry?.id])
 
   return (

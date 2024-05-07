@@ -13,7 +13,7 @@ const Select = ({ value, label, options, onChange }: ISelectProps) => {
     <FormControl fullWidth>
       <InputLabel>{label}</InputLabel>
       <MUISelect
-        value={value}
+        value={value || ''}
         label={label}
         onChange={(e) => handleChange(e.target.value)}
       >
